@@ -1,0 +1,33 @@
+{
+    "name": "C# (.NET)",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:1-9.0-bookworm",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
+            "packages": "awscli,bash-completion,pre-commit"
+        }
+    },
+
+    "containerEnv": {
+        "LOCAL_HOST_PATH": "${localWorkspaceFolder}"
+    },
+
+    "remoteEnv": {
+        "LOCAL_HOST_PATH": "${localWorkspaceFolder}"
+    },
+
+    "postCreateCommand": "dotnet restore",
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "EditorConfig.EditorConfig",
+                "ms-dotnettools.csdevkit",
+                "sourcegraph.cody-ai",
+                "medo64.render-crlf"
+            ]
+        }
+    }
+}
