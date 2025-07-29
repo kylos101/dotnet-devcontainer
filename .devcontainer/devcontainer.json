@@ -6,7 +6,7 @@
     "features": {
         "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
         "ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
-            "packages": "awscli,bash-completion,pre-commit"
+            "packages": "awscli,bash-completion,pre-commit,git-lfs"
         }
     },
 
