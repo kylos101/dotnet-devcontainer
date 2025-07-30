@@ -14,6 +14,12 @@
         "LOCAL_HOST_PATH": "${localWorkspaceFolder}"
     },
 
+    // without this the CLR yields a core dump and the language server won't start
+    "runArgs": [
+        "--privileged",
+        "--security-opt=seccomp=unconfined"
+    ],
+
     "remoteEnv": {
         "LOCAL_HOST_PATH": "${localWorkspaceFolder}"
     },
