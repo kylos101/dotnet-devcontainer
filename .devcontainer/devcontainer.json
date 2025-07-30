@@ -30,9 +30,8 @@
         "vscode": {
             "extensions": [
                 "EditorConfig.EditorConfig",
-                // "ms-dotnettools.csdevkit",
-                // "sourcegraph.cody-ai",
-                // "medo64.render-crlf"
+                "ms-dotnettools.csdevkit",
+                "medo64.render-crlf"
             ]
         }
     }
