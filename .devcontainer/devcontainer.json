@@ -1,11 +1,11 @@
 {
     "name": "C# (.NET)",
-    "image": "mcr.microsoft.com/devcontainers/dotnet:1-9.0-bookworm",
+    "image": "mcr.microsoft.com/devcontainers/dotnet",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
     "features": {
         "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
+        "ghcr.io/devcontainers-extra/features/apt-get-packages:1": {
             "packages": "awscli,bash-completion,pre-commit,git-lfs"
         }
     },
